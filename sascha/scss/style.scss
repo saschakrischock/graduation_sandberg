@@ -8,6 +8,22 @@
   font-size: 3vw;
 }
 
+#modaluser {
+  border: 1px solid #000;
+}
+
+.show {
+  display: none;
+}
+
+.timezone {
+  position:fixed;
+  bottom:0;
+  left: 50%;
+  font-family: nero, arial;
+  font-size: 3vw;
+}
+
 .position {
     position:fixed;
  margin: 1em;
