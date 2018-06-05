@@ -47,10 +47,15 @@ html *
   src: url("../assets/fonts/Herculanum.woff2") format("woff2"), url("../assets/fonts/Herculanum.woff") format("woff"), url("../assets/fonts/Herculanum.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'PMingLiU';
+  src: url("../assets/fonts/PMingLiU.woff") format("woff"), url("../assets/fonts/PMingLiU.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-size: 40px;
   background-color: #ecece7;
-  font-family: PMingLiU;
+  font-family: 'PMingLiU', Times New Roman, Serif;
   letter-spacing: -0.02em;
   height: 100vh;
   line-height: 110%;
@@ -108,7 +113,7 @@ a {
       height: 50%;
       background: #328e21;
     }
-  
+
     &:before {
       content: "";
       position: absolute;
@@ -144,7 +149,7 @@ a {
       height: 50%;
       background: #328e21;
     }
-  
+
     &:before {
       content: "";
       position: absolute;
@@ -174,7 +179,7 @@ a {
   margin-left: 20px;
   margin-right: 20px;
   top: 20px;
-  height: 89%;
+  height: 85vh;
   border-bottom: 2px solid #888; }
 
 #lefttitle {
@@ -228,9 +233,9 @@ a {
 /* sascha */
 .bottom-paremeters {
   display: flex;
-  width: 100%;
-  padding: 0 2%;
-  bottom: 2%;
+  width: 100vw;
+  /* padding: 0 2%; */
+  top: 87vh;
   position: fixed;
   font-family: Herculanum, Times, Serif;
   font-size: 1vw; }
@@ -394,7 +399,7 @@ a {
   transition: all 0.2s;
   font-size: 1em;
   width: 96%;
-  padding: 40px 1vw;
+  padding: 40px 1vw 0;
   color: #401508;
   text-shadow: 0 0 1px #828282;
   /* border: 11px solid; */
@@ -402,22 +407,33 @@ a {
   /* padding: 1em; */
   /* left: 30vw; */
   /* left: 10vw; */
-  margin: 23px;
   /* left: 30vw; */
-  margin-left: 20px;
-  top: 0;
+  top: -17px;
   z-index: 1;
-  height: 71vh;
+  height: calc(85vh - 22px);
   /* background-color: #e5e5e5; */
   position: absolute;
-  overflow: scroll; }
+  overflow: scroll;
+  float: left;
+  text-align: left;
+  direction: rtl; }
+  .designer-content .img-wrapper {
+    width: 70vw;
+    display: block;
+    float: left; }
   .designer-content img {
     width: auto;
-    height: 60vh; }
+    height: 60vh;
+    float: left;
+    text-align: left;
+    direction: initial; }
   .designer-content i {
     font-style: italic; }
   .designer-content p {
-    width: 70vw; }
+    float: left;
+    text-align: left;
+    width: 70vw;
+    direction: initial; }
 
 .show-content {
   transition: all 0.2s;
@@ -576,5 +592,18 @@ a {
   width: 3px;
   right: 0;
   bottom: -3px; }
+
+/* time changes */
+.morning-color-body {
+  background-color: yellow; }
+
+.afternoon-color-body {
+  background-color: blue; }
+
+.evening-color-body {
+  background-color: orange; }
+
+.night-color-body {
+  background-color: black; }
 
 /*# sourceMappingURL=style.css.map */

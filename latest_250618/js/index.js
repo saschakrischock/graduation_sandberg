@@ -7,6 +7,8 @@ if ($.cookie("popup_1_2") == 2) {
   $.cookie("popup_1_2", "2");
 }
 
+
+
 // mouse position tracker
 $(document).bind('mousemove', function(e){
   $('#tail').css({
